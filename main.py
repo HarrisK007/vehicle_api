@@ -101,7 +101,7 @@ class CarData(BaseModel):
     car_number: str
 
 # GET request: Fetch data by car number
-@app.get("/vehicle")
+@app.get("/")
 async def get_vehicle(car_number: str):
     data = fetch_data(car_number)
     if data:
@@ -110,7 +110,7 @@ async def get_vehicle(car_number: str):
         raise HTTPException(status_code=404, detail="Car number not found")
 
 # POST request: Fetch data by car number
-@app.post("/vehicle")
+@app.post("/")
 async def post_vehicle(car_data: CarData):
     data = fetch_data(car_data.car_number)
     if data:
