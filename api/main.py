@@ -17,8 +17,8 @@ data = [
         "user_pic": convert_to_binary("chairman.jpeg"),
         "car_number": 'BLV-977',
         "car_name": 'Cultus',
-        "Year" : "2018",
-        "Province": ' Sindh '
+        "year" : "2018",
+        "province": ' Sindh '
         
     },
     {
@@ -27,8 +27,8 @@ data = [
         "user_pic": convert_to_binary("sahil.jpeg"),
         "car_number": 'GS-3270',
         "car_name": 'Cultus',
-        "Year" : "2018",
-        "Province": ' Sindh '
+        "year" : "2018",
+        "province": ' Sindh '
     },
     {
         "user_name": 'Harris',
@@ -36,8 +36,8 @@ data = [
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'BPE-917',
         "car_name": 'Alto',
-        "Year" : "2019",
-        "Province": ' Sindh '
+        "year" : "2019",
+        "province": ' Sindh '
     },
     {
         "user_name": 'Sarah Wilson',
@@ -45,8 +45,8 @@ data = [
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'RST-7890',
         "car_name": 'Hyundai Elantra',
-        "Year" : "2019",
-        "Province": ' Sindh '
+        "year" : "2019",
+        "province": ' Sindh '
     },
     {
         "user_name": 'Chris Miller',
@@ -54,8 +54,8 @@ data = [
         "user_pic": convert_to_binary("sahil.jpeg"),
         "car_number": 'UVW-4567',
         "car_name": 'Kia Optima',
-        "Year" : "2019",
-        "Province": ' Sindh '
+        "year" : "2019",
+        "province": ' Sindh '
         
     },
     {
@@ -64,8 +64,8 @@ data = [
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'XYZ-0123',
         "car_name": 'Mazda 3',
-        "Year" : "2019",
-        "Province": ' Sindh '
+        "year" : "2019",
+        "province": ' Sindh '
     },
     {
         "user_name": 'James Anderson',
@@ -73,8 +73,8 @@ data = [
         "user_pic": convert_to_binary("sahil.jpeg"),
         "car_number": 'DEF-6789',
         "car_name": 'Tesla Model 3',
-        "Year" : "2019",
-        "Province": ' Sindh '
+        "year" : "2019",
+        "province": ' Sindh '
     },
     {
         "user_name": 'Emma Thomas',
@@ -82,8 +82,8 @@ data = [
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'GHI-3456',
         "car_name": 'Volkswagen Jetta',
-        "Year" : "2019",
-        "Province": ' Sindh '
+        "year" : "2019",
+        "province": ' Sindh '
     },
     {
         "user_name": 'Olivia Martinez',
@@ -91,8 +91,8 @@ data = [
         "user_pic": convert_to_binary("sahil.jpeg"),
         "car_number": 'JKL-1234',
         "car_name": 'BMW 3 Series',
-        "Year" : "2019",
-        "Province": ' Sindh '
+        "year" : "2019",
+        "province": ' Sindh '
     },
     {
         "user_name": 'William Lee',
@@ -100,8 +100,8 @@ data = [
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'MNO-5678',
         "car_name": 'Mercedes-Benz C-Class',
-        "Year" : "2019",
-        "Province": ' Sindh '
+        "year" : "2019",
+        "province": ' Sindh '
     },
 ]
 
@@ -112,8 +112,8 @@ class VehicleInfo(BaseModel):
     user_pic: str
     car_number: str
     car_name: str
-    Year: str
-    Province:str
+    year: str
+    province:str
 
 # GET endpoint to retrieve data by car_number
 @app.get("/vehicle/{car_number}", response_model=VehicleInfo)
