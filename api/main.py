@@ -12,74 +12,96 @@ def convert_to_binary(image_name):
 
 data = [
     {
-        "user_name": 'Michael Johnson',
+        "user_name": 'Dr Asghar Chandio',
         "user_cnic": '34567-8901234-5',
-        "user_pic": convert_to_binary("sahil.jpeg"),
-        "car_number": 'LMN-2345',
-        "car_name": 'Ford Focus'
+        "user_pic": convert_to_binary("chairman.jpeg"),
+        "car_number": 'BLV-977',
+        "car_name": 'Cultus',
+        "Year" : "2018",
+        "Province": ' Sindh '
+        
     },
     {
-        "user_name": 'Emily Davis',
+        "user_name": 'Sahil',
         "user_cnic": '45678-9012345-6',
-        "user_pic": convert_to_binary("Harris.jpeg"),
-        "car_number": 'JKL-6789',
-        "car_name": 'Chevrolet Malibu'
+        "user_pic": convert_to_binary("sahil.jpeg"),
+        "car_number": 'GS-3270',
+        "car_name": 'Cultus',
+        "Year" : "2018",
+        "Province": ' Sindh '
     },
     {
-        "user_name": 'David Brown',
+        "user_name": 'Harris',
         "user_cnic": '56789-0123456-7',
-        "user_pic": convert_to_binary("sahil.jpeg"),
-        "car_number": 'OPQ-3456',
-        "car_name": 'Nissan Altima'
+        "user_pic": convert_to_binary("Harris.jpeg"),
+        "car_number": 'BPE-917',
+        "car_name": 'Alto',
+        "Year" : "2019",
+        "Province": ' Sindh '
     },
     {
         "user_name": 'Sarah Wilson',
         "user_cnic": '67890-1234567-8',
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'RST-7890',
-        "car_name": 'Hyundai Elantra'
+        "car_name": 'Hyundai Elantra',
+        "Year" : "2019",
+        "Province": ' Sindh '
     },
     {
         "user_name": 'Chris Miller',
         "user_cnic": '78901-2345678-9',
         "user_pic": convert_to_binary("sahil.jpeg"),
         "car_number": 'UVW-4567',
-        "car_name": 'Kia Optima'
+        "car_name": 'Kia Optima',
+        "Year" : "2019",
+        "Province": ' Sindh '
+        
     },
     {
         "user_name": 'Amanda Taylor',
         "user_cnic": '89012-3456789-0',
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'XYZ-0123',
-        "car_name": 'Mazda 3'
+        "car_name": 'Mazda 3',
+        "Year" : "2019",
+        "Province": ' Sindh '
     },
     {
         "user_name": 'James Anderson',
         "user_cnic": '90123-4567890-1',
         "user_pic": convert_to_binary("sahil.jpeg"),
         "car_number": 'DEF-6789',
-        "car_name": 'Tesla Model 3'
+        "car_name": 'Tesla Model 3',
+        "Year" : "2019",
+        "Province": ' Sindh '
     },
     {
         "user_name": 'Emma Thomas',
         "user_cnic": '01234-5678901-2',
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'GHI-3456',
-        "car_name": 'Volkswagen Jetta'
+        "car_name": 'Volkswagen Jetta',
+        "Year" : "2019",
+        "Province": ' Sindh '
     },
     {
         "user_name": 'Olivia Martinez',
         "user_cnic": '23456-7890123-3',
         "user_pic": convert_to_binary("sahil.jpeg"),
         "car_number": 'JKL-1234',
-        "car_name": 'BMW 3 Series'
+        "car_name": 'BMW 3 Series',
+        "Year" : "2019",
+        "Province": ' Sindh '
     },
     {
         "user_name": 'William Lee',
         "user_cnic": '34567-8901234-4',
         "user_pic": convert_to_binary("Harris.jpeg"),
         "car_number": 'MNO-5678',
-        "car_name": 'Mercedes-Benz C-Class'
+        "car_name": 'Mercedes-Benz C-Class',
+        "Year" : "2019",
+        "Province": ' Sindh '
     },
 ]
 
@@ -90,6 +112,8 @@ class VehicleInfo(BaseModel):
     user_pic: str
     car_number: str
     car_name: str
+    Year: str
+    Province:str
 
 # GET endpoint to retrieve data by car_number
 @app.get("/vehicle/{car_number}", response_model=VehicleInfo)
