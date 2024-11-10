@@ -14,7 +14,7 @@ data = [
     {
         "user_name": 'Dr Asghar Chandio',
         "user_cnic": '34567-8901234-5',
-        "user_pic": convert_to_binary("chairman.jpeg"),
+        "user_pic": convert_to_binary("chairman.jpg"),
         "car_number": 'BLV-977',
         "car_name": 'Cultus',
         "year" : "2018",
