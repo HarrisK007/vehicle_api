@@ -5,44 +5,44 @@ import base64
 
 app = FastAPI()
 
-# Dummy data in memory (no separate database)
+# Demo data in memory: fictional people, fake ID numbers and placeholder avatars
 def convert_to_binary(image_name):
     with open(image_name, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
 
 data = [
     {
-        "user_name": 'Dr Asghar Chandio',
-        "user_cnic": '34567-8901234-5',
-        "user_pic": convert_to_binary("chairman.jpg"),
-        "car_number": 'BLV-977',
+        "user_name": 'Ali Raza',
+        "user_cnic": '00000-0000000-0',
+        "user_pic": convert_to_binary("avatar1.png"),
+        "car_number": 'ABC-101',
         "car_name": 'Cultus',
         "year" : "2018",
         "province": ' Sindh '
         
     },
     {
-        "user_name": 'Sahil',
-        "user_cnic": '45678-9012345-6',
-        "user_pic": convert_to_binary("sahil.jpeg"),
-        "car_number": 'GS-3270',
+        "user_name": 'Bilal Ahmed',
+        "user_cnic": '00000-0000000-1',
+        "user_pic": convert_to_binary("avatar2.png"),
+        "car_number": 'ABC-102',
         "car_name": 'Cultus',
         "year" : "2018",
         "province": ' Sindh '
     },
     {
-        "user_name": 'Harris',
-        "user_cnic": '56789-0123456-7',
-        "user_pic": convert_to_binary("Harris.jpeg"),
-        "car_number": 'BPE-917',
+        "user_name": 'Sana Iqbal',
+        "user_cnic": '00000-0000000-2',
+        "user_pic": convert_to_binary("avatar3.png"),
+        "car_number": 'ABC-103',
         "car_name": 'Alto',
         "year" : "2019",
         "province": ' Sindh '
     },
     {
         "user_name": 'Sarah Wilson',
-        "user_cnic": '67890-1234567-8',
-        "user_pic": convert_to_binary("Harris.jpeg"),
+        "user_cnic": '00000-0000000-3',
+        "user_pic": convert_to_binary("avatar3.png"),
         "car_number": 'RST-7890',
         "car_name": 'Hyundai Elantra',
         "year" : "2019",
@@ -50,8 +50,8 @@ data = [
     },
     {
         "user_name": 'Chris Miller',
-        "user_cnic": '78901-2345678-9',
-        "user_pic": convert_to_binary("sahil.jpeg"),
+        "user_cnic": '00000-0000000-4',
+        "user_pic": convert_to_binary("avatar1.png"),
         "car_number": 'UVW-4567',
         "car_name": 'Kia Optima',
         "year" : "2019",
@@ -60,8 +60,8 @@ data = [
     },
     {
         "user_name": 'Amanda Taylor',
-        "user_cnic": '89012-3456789-0',
-        "user_pic": convert_to_binary("Harris.jpeg"),
+        "user_cnic": '00000-0000000-5',
+        "user_pic": convert_to_binary("avatar3.png"),
         "car_number": 'XYZ-0123',
         "car_name": 'Mazda 3',
         "year" : "2019",
@@ -69,8 +69,8 @@ data = [
     },
     {
         "user_name": 'James Anderson',
-        "user_cnic": '90123-4567890-1',
-        "user_pic": convert_to_binary("sahil.jpeg"),
+        "user_cnic": '00000-0000000-6',
+        "user_pic": convert_to_binary("avatar2.png"),
         "car_number": 'DEF-6789',
         "car_name": 'Tesla Model 3',
         "year" : "2019",
@@ -78,8 +78,8 @@ data = [
     },
     {
         "user_name": 'Emma Thomas',
-        "user_cnic": '01234-5678901-2',
-        "user_pic": convert_to_binary("Harris.jpeg"),
+        "user_cnic": '00000-0000000-7',
+        "user_pic": convert_to_binary("avatar3.png"),
         "car_number": 'GHI-3456',
         "car_name": 'Volkswagen Jetta',
         "year" : "2019",
@@ -87,8 +87,8 @@ data = [
     },
     {
         "user_name": 'Olivia Martinez',
-        "user_cnic": '23456-7890123-3',
-        "user_pic": convert_to_binary("sahil.jpeg"),
+        "user_cnic": '00000-0000000-8',
+        "user_pic": convert_to_binary("avatar3.png"),
         "car_number": 'JKL-1234',
         "car_name": 'BMW 3 Series',
         "year" : "2019",
@@ -96,8 +96,8 @@ data = [
     },
     {
         "user_name": 'William Lee',
-        "user_cnic": '34567-8901234-4',
-        "user_pic": convert_to_binary("Harris.jpeg"),
+        "user_cnic": '00000-0000000-9',
+        "user_pic": convert_to_binary("avatar1.png"),
         "car_number": 'MNO-5678',
         "car_name": 'Mercedes-Benz C-Class',
         "year" : "2019",
